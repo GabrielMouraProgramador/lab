@@ -1,3 +1,12 @@
+## Recuperando a senha inicial do Jenkins
+
+Para obter a chave secreta (senha inicial) do Jenkins, execute o seguinte comando:
+
+`bash`
+sudo cat jenkins_home/secrets/initialAdminPassword
+
+---
+
 # Jenkins Home Directory (`/var/jenkins_home`)
 
 Este diretório é onde o Jenkins armazena todos os seus dados essenciais e configurações. Ele contém informações cruciais sobre os jobs, plugins, histórico de builds, credenciais e mais. No caso deste repositório, ele é montado em um volume Docker para persistência de dados.
